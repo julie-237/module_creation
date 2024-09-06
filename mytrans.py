@@ -1,4 +1,4 @@
-def english_to_french_translator(text):
+def english_to_french_translator(text: str):
     if text == "school":
         return "école"
     elif text == "kitchen":
