@@ -20,3 +20,5 @@ def english_to_french_translator(text:str):
             return "esclave"
         case "love":
             return "amour"
+        case _:
+            return "Unknown"

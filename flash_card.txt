@@ -1,1 +1,1 @@
-[('love', 'amour'), ('chicken', 'poulet'), ('bed', 'lit')]
+[('kitchen', 'cuisine'), ('woman', 'femme')]
