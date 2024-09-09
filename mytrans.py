@@ -1,21 +1,22 @@
-def english_to_french_translator(text: str):
-    if text == "school":
-        return "école"
-    elif text == "kitchen":
-        return"cuisine"
-    elif text == "chiken":
-        return"poulet"
-    elif text == "bag":
-        return"sac"
-    elif text == "bed":
-       return"lit"
-    elif text == "church":
-        return"eglise"
-    elif text == "man":
-        return"homme"
-    elif text == "woman":
-      return"femme"
-    elif text == "slave":
-        return"esclave"
-    elif text == "love":
-        return"amour"
+def english_to_french_translator(text:str):
+    match text:
+        case "school":
+            return "école"
+        case "kitchen":
+            return "cuisine"
+        case "chicken":
+            return "poulet"
+        case "bag":
+            return "sac"
+        case "bed":
+            return "lit"
+        case "church":
+            return "eglise"
+        case "man":
+            return "homme"
+        case "woman":
+            return "femme"
+        case "slave":
+            return "esclave"
+        case "love":
+            return "amour"
