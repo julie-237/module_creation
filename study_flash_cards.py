@@ -1,6 +1,7 @@
 import os
 import ast
 import random
+import time
 
 file_name = "flash_card.txt"
 def collect_card_list_from_file():
@@ -29,5 +30,10 @@ if not os.path.exists("flash_card.txt"):
     exit
 card_list = collect_card_list_from_file()
 print("you have " + str(len(card_list)) + " cards to guess.")
+input("Ready ? press enter to start ")
+time_start = time.time()
 guess_cards(card_list)
+time_stop = time.time()
+duration = int(time_stop - time_start)
+print("you guessed all cards in " + str(duration) + " seconds")
 print("End of program")
