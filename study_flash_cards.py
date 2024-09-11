@@ -3,6 +3,7 @@ import ast
 import random
 import time
 
+
 file_name = "flash_card.txt"
 def collect_card_list_from_file():
     card_list = []

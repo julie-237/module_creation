@@ -1,1 +1,1 @@
-[('bed', 'lit'), ('man', 'homme'), ('bag', 'sac')]
+[('house', 'maison'), ('hospital', 'hôpital'), ('boyfriend', 'petit ami')]

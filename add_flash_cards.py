@@ -1,6 +1,12 @@
-import mytrans
+
 import os
 import ast
+from deep_translator import GoogleTranslator
+def Translator(text:str):
+    translated = GoogleTranslator(source='auto', target='fr').translate(text)
+    return translated
+
+
 
 file_name = "flash_card.txt"
 def collect_card_list_from_file():
@@ -22,7 +28,7 @@ collect_card_list_from_file()
 start = input(translate_msg)
 while start == "yes":
     word_en = input("type a word in English to get the French translation ")
-    word_fr = mytrans.english_to_french_translator(word_en)
+    word_fr = Translator(word_en)
     new_card = (word_en, word_fr)
     print(new_card)
     save = input(save_msg)
